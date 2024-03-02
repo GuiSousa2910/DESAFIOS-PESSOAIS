@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="total">~
+
+        <div class="calculadora" id="divMensagem">
+                <input type="number" class="leitor" readonly value="0" id="input">
+            <div >
+                <button onclick="c()" class="operacao">C</button>
+                <button onclick="ce()" class="operacao">CE</button>
+                <button onclick="porcentagem()" class="operacao">%</button>
+                <button onclick="dividir()" class="sinais">&#247;</button><br>
+                <button onclick="sete()" class="botaoNumero">7</button>
+                <button onclick="oito()" class="botaoNumero">8</button>
+                <button onclick="nove()" class="botaoNumero">9</button>
+                <button onclick="vezes()" class="sinais">x</button><br>
+                <button onclick="quatro()" class="botaoNumero">4</button>
+                <button onclick="cinco()" class="botaoNumero">5</button>
+                <button onclick="seis()" class="botaoNumero">6</button>
+                <button onclick="menos()" class="sinais">-</button><br>
+                <button onclick="um()" class="botaoNumero">1</button>
+                <button onclick="dois()" class="botaoNumero">2</button>
+                <button onclick="tres()" class="botaoNumero">3</button>
+                <button onclick="adicao()" class="sinais">+</button><br>
+                <button onclick="zero()" class="botao0 botaoNumero">0</button>
+                <button onclick="igual()" class="igual">=</button>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+    var n1 = 0;
+    var n2 = 0;
+    var resultado = 0;
+    var operacaoAtiva = "";
+
+    function definirNumero(numero) {
+        if (n1 === 0 || n2 !== 0) {
+            n1 = numero;
+            n2 = 0;
+        } else {
+            n2 = numero;
+        }
+
+        if (n2 !== 0) {
+        input.value = n2;
+    } else {
+        input.value = n1;
+    } 
+}
+
+    function zero() {
+        definirNumero(0)
+    }
+
+    function um() {
+        definirNumero(1)
+    }
+
+    function dois() {
+        definirNumero(2)
+    }
+
+    function tres() {
+        definirNumero(3)
+    }
+
+    function quatro() {
+        definirNumero(4)
+    }
+
+    function cinco() {
+        definirNumero(5)
+    }
+
+    function seis() {
+        definirNumero(6)
+    }
+
+    function sete() {
+        definirNumero(7)
+    }
+
+    function oito() {
+        definirNumero(8)
+    }
+
+    function nove() {
+        definirNumero(9)
+    }
+
+    function adicao() {
+        operacaoAtiva = 'adicao'
+    }
+
+    function menos() {
+        operacaoAtiva = "menos";
+    }
+
+    function vezes() {
+        operacaoAtiva = "vezes";
+    }
+
+    function dividir() {
+        operacaoAtiva = "dividir";
+    }
+
+    function igual() {
+        if (operacaoAtiva === "adicao") {
+            resultado = n1 + n2
+        } if (operacaoAtiva === "menos") {
+            resultado = n1 - n2;
+        } if (operacaoAtiva === "vezes") {
+            resultado = n1 * n2;
+        } if (operacaoAtiva === "dividir") {
+            resultado = n1 / n2;
+        }
+        input.value = resultado;
+    }
+
+    function c (){
+        n1 = 0;
+        n2 = 0;
+        input.value = n1
+    }
+
+    function ce() {
+        n1 = 0;
+        n2 = 0;
+        input.value = n1
+    }
+</script>
