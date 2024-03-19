@@ -55,8 +55,9 @@
     transition: 0.3s;
 }
 
-.operacao{
+.operacaoC{
     background-color: #8a5efd;
+    width: 150px
 }
 
 button{
