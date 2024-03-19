@@ -1,0 +1,62 @@
+body{
+    font-size: 19px;
+    font-family: sans-serif;
+    /* background: linear-gradient(54deg, rgba(28,87,57,1) 0%, rgba(106,126,54,1) 35%, rgba(212,242,134,1) 100%);   */
+    background-color: rgba(28,87,57,1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px white solid;
+    background-color: #D4F286;
+    color: #6A7E36;
+    font-weight: bolder;
+}
+
+.card input {
+    width: 200px;
+    height: 25px;
+    margin-top: 5px;
+    border: white 3px solid;
+    border-radius: 15px;
+    background-color: #B1D965;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.card button {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: white 3px solid;
+    /* margin: 1px 0 15px 0; */
+    cursor: pointer;
+    margin-bottom: 0px;
+    background-color: #6A7E36;
+    color: aliceblue;
+    
+}
+
+.card button:hover{
+    background-color: black;
+    color: white;
+}
+
+.mensagem{
+    font-size: 16px;
+}
