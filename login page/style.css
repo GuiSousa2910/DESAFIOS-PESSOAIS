@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-style: normal;
+}
+
+.card{
+    background: linear-gradient(0deg, rgba(93,36,23,1) 0%, rgba(197,125,86,1) 35%, rgba(255,180,138,1) 100%) ;
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+    border: solid white 4.5px;
+    margin-left: 35%;
+    align-items: center;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.LoginTXT{
+    font-family: cursive;
+    color: #320000;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 15px;
+    border-top-left-radius: 50px ;
+    border-top-right-radius: 50px;
+}
+
+.email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #320000; 
+    background-color: transparent;
+    width: 350px;
+    font-size: 25px;
+    color: #5d2417;
+    margin-top: 80px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.senha{
+    border-top: none;
+    border-left: none;
+    border-right: none;   
+    border-color: #320000; 
+    background-color: transparent;
+    width: 350px;
+    font-size: 25px;
+    color: #5d2417;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.botao{
+    background-color: #320000;
+    color: white;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: large;
+    font-weight: bolder;
+}
+button:active{
+    background-color: #5d2417;
+}
